@@ -1,7 +1,7 @@
 {
     "containerDefinitions": [
         {
-            "name": "httpd",
+            "name": "nyan",
             "image": "PLACEHOLDER",
             "essential": true,
             "portMappings": [
@@ -10,7 +10,8 @@
                     "protocol": "tcp",
                     "containerPort": 80
                 }
-            ]
+            ],
+            "environment": [{"name": "allie-test", "value": "woo-hoo!" }]
         }
     ],
     "requiresCompatibilities": [
