@@ -13,7 +13,8 @@
             ],
             "environment": [
                 {"name": "devx-test", "value": "woo-hoo!" },
-                {"name": "foo", "value": "bar"}
+                {"name": "foo", "value": "bar"},
+                {"name": "TEST", "value": "DEMO1"}
             ]
         }
     ],
