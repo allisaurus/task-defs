@@ -1,7 +1,7 @@
 {
     "containerDefinitions": [
         {
-            "name": "nyan",
+            "name": "httpd",
             "image": "PLACEHOLDER",
             "essential": true,
             "portMappings": [
@@ -11,7 +11,10 @@
                     "containerPort": 80
                 }
             ],
-            "environment": [{"name": "allie-test", "value": "woo-hoo!" }]
+            "environment": [
+                {"name": "devx-test", "value": "woo-hoo!" },
+                {"name": "foo", "value": "bar"}
+            ]
         }
     ],
     "requiresCompatibilities": [
