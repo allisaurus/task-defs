@@ -16,10 +16,10 @@
             ]
         },
         {
-            "name": "busy",
-            "image": "busybox",
+            "name": "ecssample",
+            "image": "docker pull amazon/amazon-ecs-sample",
             "environment": [
-                {"name": "BUSY!", "value": "always" }
+                {"name": "ECS", "value": "test" }
             ],
             "dockerLabels": {
                 "SOME_TEXT": "FAKE LABEL"
