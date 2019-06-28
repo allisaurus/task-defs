@@ -16,8 +16,8 @@
             ]
         },
         {
-            "name": "ecssample",
-            "image": "amazon/amazon-ecs-sample",
+            "name": "httpd2",
+            "image": "httpd",
             "environment": [
                 {"name": "ECS", "value": "test" }
             ],
