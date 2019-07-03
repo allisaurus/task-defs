@@ -12,7 +12,8 @@
                 }
             ],
             "environment": [
-                {"name": "WEB", "value": "v1" }
+                {"name": "WEB", "value": "v1" },
+                {"name": "Hello_devx!", "value": "woot"}
             ]
         },
         {
