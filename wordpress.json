@@ -20,7 +20,7 @@
             "image": "mysql:5.7",
             "environment": [
                 {"name": "msql", "value": "test" },
-                {"MYSQL_ROOT_PASSWORD": "password"}
+                {"name": "MYSQL_ROOT_PASSWORD", "value": "password"}
             ],
             "dockerLabels": {
                 "SOME_TEXT": "FAKE LABEL"
