@@ -1,0 +1,37 @@
+{
+    "containerDefinitions": [
+        {
+            "name": "wordpress",
+            "image": "PLACEHOLDER",
+            "essential": true,
+            "portMappings": [
+                {
+                    "hostPort": 80,
+                    "protocol": "tcp",
+                    "containerPort": 80
+                }
+            ],
+            "environment": [
+                {"name": "WEB", "value": "v1" }
+            ]
+        },
+        {
+            "name": "mysql",
+            "image": "mysql:5.7",
+            "environment": [
+                {"name": "msql", "value": "test" },
+                {"MYSQL_ROOT_PASSWORD": "password"}
+            ],
+            "dockerLabels": {
+                "SOME_TEXT": "FAKE LABEL"
+            }
+        }
+    ],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "networkMode": "awsvpc",
+    "cpu": "512",
+    "memory": "1024",
+    "family": "wordpress"
+}
