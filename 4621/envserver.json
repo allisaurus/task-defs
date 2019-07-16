@@ -1,0 +1,34 @@
+{
+    "containerDefinitions": [ 
+       { 
+          "essential": true,
+          "environment": [
+             {
+               "name": "TEST_CONFIG",
+               "value": "test_config_value_eh"
+             },
+             {
+                 "name": "REPRO_TEST",
+                 "value": "1"
+             }
+          ],
+          "image": "alpine:latest",
+          "name": "envserver",
+          "portMappings": [ 
+             { 
+                "containerPort": 8080,
+                "hostPort": 8080,
+                "protocol": "tcp"
+             }
+          ]
+       }
+    ],
+    "cpu": "256",
+    "executionRoleArn": "",
+    "family": "fargate-task-definition",
+    "memory": "512",
+    "networkMode": "awsvpc",
+    "requiresCompatibilities": [ 
+        "FARGATE" 
+     ]
+ }
