@@ -13,7 +13,8 @@
             ],
             "environment": [
                 {"name": "foo", "value": "bar"},
-                {"name": "DEMO", "value": "10"}
+                {"name": "DEMO", "value": "10"},
+                {"name": "SIG", "value": "DemoTime"}
             ]
         }
     ],
