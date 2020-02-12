@@ -1,0 +1,24 @@
+{
+    "containerDefinitions": [
+        {
+            "name": "httpd",
+            "image": "PLACEHOLDER",
+            "essential": true,
+            "portMappings": [
+                {
+                    "hostPort": 0,
+                    "protocol": "tcp",
+                    "containerPort": 80
+                }
+            ],
+            "environment": [
+                {"name": "foo", "value": "bar"},
+                {"name": "ports", "value": "dynamic"}
+            ]
+        }
+    ],
+    "networkMode": "bridge",
+    "cpu": "5",
+    "memory": "100",
+    "family": "httpd"
+}
