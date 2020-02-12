@@ -18,7 +18,7 @@
         }
     ],
     "networkMode": "bridge",
-    "cpu": "128",
+    "cpu": "256",
     "memory": "512",
     "family": "httpd"
 }
