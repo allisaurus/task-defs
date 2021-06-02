@@ -14,16 +14,6 @@
             "environment": [
                 {"name": "WEB", "value": "v1" }
             ]
-        },
-        {
-            "name": "alpine",
-            "image": "alpine",
-            "environment": [
-                {"name": "alpine", "value": "test" }
-            ],
-            "dockerLabels": {
-                "SOME_TEXT": "FAKE LABEL"
-            }
         }
     ],
     "taskRoleArn": "ecsExecTaskRole",
